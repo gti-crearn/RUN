@@ -1,0 +1,43 @@
+Running on 10.10.0.21:8000 over http (CTRL + C to quit)
+Running on 10.10.0.21:8000 over http (CTRL + C to quit)
+Running on 0.0.0.0:8000 over http (CTRL + C to quit)
+Running on 0.0.0.0:8000 over http (CTRL + C to quit)
+Running on 10.10.0.21:8000 over http (CTRL + C to quit)
+Running on 10.10.0.21:8000 over http (CTRL + C to quit)
+Traceback (most recent call last):
+  File "/run/run/bin/hypercorn", line 8, in <module>
+    sys.exit(main())
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/__main__.py", line 177, in main
+    run(config)
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/run.py", line 34, in run
+    worker_func(config)
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/asyncio/run.py", line 214, in asyncio_worker
+    debug=config.debug,
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/asyncio/run.py", line 244, in _run
+    loop.run_until_complete(main)
+  File "/usr/lib64/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/asyncio/run.py", line 144, in worker_serve
+    sockets = config.create_sockets()
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/config.py", line 206, in create_sockets
+    sock.bind(binding)
+OSError: [Errno 98] Address already in use
+Running on 10.10.0.21:8000 over http (CTRL + C to quit)
+Traceback (most recent call last):
+  File "/run/run/bin/hypercorn", line 8, in <module>
+    sys.exit(main())
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/__main__.py", line 177, in main
+    run(config)
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/run.py", line 34, in run
+    worker_func(config)
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/asyncio/run.py", line 214, in asyncio_worker
+    debug=config.debug,
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/asyncio/run.py", line 244, in _run
+    loop.run_until_complete(main)
+  File "/usr/lib64/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/asyncio/run.py", line 144, in worker_serve
+    sockets = config.create_sockets()
+  File "/run/run/lib64/python3.6/site-packages/hypercorn/config.py", line 206, in create_sockets
+    sock.bind(binding)
+OSError: [Errno 98] Address already in use

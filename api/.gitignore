@@ -1,0 +1,55 @@
+# Ignorar arquivos e diretórios de configuração do ambiente
+.env
+
+# Ignorar diretórios e arquivos de cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Ignorar arquivos de logs
+*.log
+
+# Ignorar diretórios de IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignorar arquivos e diretórios do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de dependências do Python
+*.egg-info/
+*.eggs/
+*.egg
+*.wheel
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignorar virtual environments
+env/
+venv/
+ENV/
+VENV/
+.env/
+.venv/
+.ENV/
+.VENV/
+
+# Ignorar arquivos e diretórios gerados pelo pytest
+.cache/
+.tox/
+.pytest_cache/
+.nox/
+
+# Ignorar arquivos do alembic
+alembic/versions/*
+
+# Ignorar outros arquivos e diretórios personalizados
+# Adicione aqui outras regras específicas do seu projeto
+
+
+#Ignorar seeds
+seed_art.py
+seed.py
